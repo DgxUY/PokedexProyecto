@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./stylesCard.CSS" />
+    <link rel="icon" href="./Icons/pokeball.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div class="loader-wrapper">
+      <div class="pokedex-loader"></div>
+    </div>
+
+    <header>
+      <div class="pokeball-container">
+        <img
+          class="pokeball-container-img"
+          src="./Icons/default/pokeball.png"
+          alt="Pokeball"
+        />
+        <h1>Pokédex</h1>
+      </div>
+
+      <div class="search-container">
+        
+        <input id="pokemon-input" type="text" placeholder="Buscar Pokémon..." />
+        <button id="buscar-pokemon-button" >Buscar</button>
+      </div>
+
+      <nav>
+        <ul>
+          <li ><a class="btn-favoritos" href="#favoritos">Favoritos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-main">
+         <div class="type-img-container">
+          <img class="type-img normal" src="./Icons/normal.svg" alt="Normal" />
+          <img class="type-img fire" src="./Icons/fire.svg" alt="Fire" />
+          <img class="type-img water" src="./Icons/water.svg" alt="Water" />
+          <img class="type-img electric" src="./Icons/electric.svg" alt="Electric" />
+          <img class="type-img grass" src="./Icons/grass.svg" alt="Grass" />
+          <img class="type-img ice" src="./Icons/ice.svg" alt="Ice" />
+          <img class="type-img fighting" src="./Icons/fighting.svg" alt="Fighting" />
+          <img class="type-img poison" src="./Icons/poison.svg" alt="Poison" />
+          <img class="type-img ground" src="./Icons/ground.svg" alt="Ground" />
+          <img class="type-img flying" src="./Icons/flying.svg" alt="Flying" />
+          <img class="type-img psychic" src="./Icons/psychic.svg" alt="Psychic" />
+          <img class="type-img bug" src="./Icons/bug.svg" alt="Bug" />
+          <img class="type-img rock" src="./Icons/rock.svg" alt="Rock" />
+          <img class="type-img ghost" src="./Icons/ghost.svg" alt="Ghost" />
+          <img class="type-img dragon" src="./Icons/dragon.svg" alt="Dragon" />
+          <img class="type-img dark" src="./Icons/dark.svg" alt="Dark" />
+          <img class="type-img steel" src="./Icons/steel.svg" alt="Steel" />
+          <img class="type-img fairy" src="./Icons/fairy.svg" alt="Fairy" />
+        </div>
+      </div>
+
+      <section class="AAAA">
+        <section id="resultado-pokemon"></section>
+        <div class="cargar-mas">
+          <img class="arrow cargar-mas-btn-left" src="./Icons/arrowLeft.svg" alt="">
+          <img class="arrow cargar-mas-btn-right" src="./Icons/arrow.svg" alt="">
+        </div>
+    </section>
+
+      <div class="container-main">
+        <div class="region-container">
+          <button class="btn-region kanto" data-start="1" data-end="151">Kanto</button>
+          <button class="btn-region johto" data-start="152" data-end="251">Johto</button>
+          <button button class="btn-region hoenn" data-start="252" data-end="386">Hoenn</button>
+          <button class="btn-region sinnoh" data-start="387" data-end="493">Sinnoh</button>
+          <button button class="btn-region unova" data-start="494" data-end="649">Unova</button>
+          <button class="btn-region kalos" data-start="650" data-end="721">Kalos</button>
+          <button class="btn-region alola" data-start="722" data-end="809">Alola</button>
+          <button class="btn-region galar" data-start="810" data-end="905">Galar</button>
+          <button class="btn-region paldea" data-start="906" data-end="1010">Paldea</button>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <p>Pokédex hecha con ❤️</p>
+    </footer>
+
+  </body>
+
+ 
+
+  <script src="./script.js"></script>
+</html>
