@@ -29,7 +29,7 @@ function toggleLoader(mostrar) {
 
 function isFavoritoImg(id) {
   id = id.toString().padStart(3, "0");
-  return favoritos.includes(id) ? "/Icons/star-yellow.svg" : "/Icons/default/star.png";
+  return favoritos.includes(id) ? "./Icons/star-yellow.svg" : "./Icons/default/star.png";
 }
 
 async function renderizarPokemons(pokemons) {
