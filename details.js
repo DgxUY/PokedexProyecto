@@ -180,7 +180,7 @@ function renderizarHeader(pokemon, habilidades) {
 
   if (buttonHome) {
     buttonHome.addEventListener('click', function () {
-      window.location.href = '/index.html';
+      window.location.href = '/PokedexProyecto';
     });
   }
 }
