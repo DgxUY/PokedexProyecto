@@ -191,7 +191,7 @@ function renderizarMovimientos(movimientos) {
       ${movimientos.map(m => `
         <li class='${m.tipoIng} li-moves'>
           ${m.nombreEsp}
-          <img class="tipo-ataque" src="./Icons/${m.tipoIng}.svg" alt="${m.tipoIng}">
+          <img class="tipo-ataque" src="./Icons/${m.tipoIng.toLowerCase()}.svg" alt="${m.tipoIng}">
         </li>
       `).join("")}
     </ul>
